@@ -5,6 +5,9 @@ on:
     branches:
       - master
 
+permissions:
+  contents: write # this permission is needed to submit the dependency graph
+
 jobs:
   dependency-graph:
     runs-on: ubuntu-latest
