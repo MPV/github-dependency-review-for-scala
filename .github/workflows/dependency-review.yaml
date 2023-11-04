@@ -5,6 +5,7 @@ on:
 
 permissions:
   contents: read
+  pull-requests: write # for comment-summary-in-pr
 
 jobs:
   dependency-review:
