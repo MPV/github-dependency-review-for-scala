@@ -4,7 +4,7 @@ on:
   pull_request:
 
 permissions:
-  contents: read
+  contents: write # for submitting dependency graph
   pull-requests: write # for comment-summary-in-pr
 
 jobs:
