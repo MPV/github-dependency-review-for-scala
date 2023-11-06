@@ -10,13 +10,12 @@ permissions:
   contents: write # for submitting dependency graph
   pull-requests: write # for comment-summary-in-pr
 
-env:
-  # workaround for PR support:
-  GITHUB_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
-
 jobs:
   dependency-review:
     runs-on: ubuntu-latest
+    env:
+      # workaround for PR support:
+      GITHUB_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
     steps:
       - uses: actions/checkout@v4
       - uses: scalacenter/sbt-dependency-submission@v2
