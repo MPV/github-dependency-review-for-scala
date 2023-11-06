@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: scalacenter/sbt-dependency-submission@v2
+      - uses: johnpangalos/sbt-dependency-submission@4035b2f11aaaddd4d87c8e61f0811e513fe822c9
       - uses: actions/dependency-review-action@v3
         if: github.event_name == 'pull_request'
         with:
