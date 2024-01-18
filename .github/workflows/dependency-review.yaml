@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: scalacenter/sbt-dependency-submission@ddf704f013d7d84f1c01a93411054cecd92224b7 # v2
-      - uses: actions/dependency-review-action@v3
+      - uses: actions/dependency-review-action@4cd9eb2d23752464a87e00499c30d256a59a01b4 # v4
         if: github.event_name == 'pull_request'
         with:
           comment-summary-in-pr: always
