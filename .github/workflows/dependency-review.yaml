@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: olafurpg/setup-scala@v11
+      - uses: olafurpg/setup-scala@744e9ce1e30f404577342a2e2abc30c3023c380a # v12
       - uses: scalacenter/sbt-dependency-submission@ddf704f013d7d84f1c01a93411054cecd92224b7 # v2
       - uses: actions/dependency-review-action@v3
         if: github.event_name == 'pull_request'
