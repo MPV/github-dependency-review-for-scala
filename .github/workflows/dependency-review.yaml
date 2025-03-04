@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: olafurpg/setup-scala@56b893ae09c48f21c16a9793a107c2723ccc123a # v13
-      - uses: scalacenter/sbt-dependency-submission@ddf704f013d7d84f1c01a93411054cecd92224b7 # v2
+      - uses: scalacenter/sbt-dependency-submission@64084844d2b0a9b6c3765f33acde2fbe3f5ae7d3 # v3
       - uses: actions/dependency-review-action@v3
         if: github.event_name == 'pull_request'
         with:
